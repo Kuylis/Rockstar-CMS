@@ -1,10 +1,12 @@
-import React from 'react'
+import { Helmet } from 'react-helmet-async';
 
 const About = () => {
     return (
-        <div>
-            
-        </div>
+      <div>
+        <Helmet>
+          <title>Konsultbolag i Malmö- Vi är Sveriges bästa Konsultbolag Kodify.se</title>
+        </Helmet>
+      </div>
     )
 }
 
