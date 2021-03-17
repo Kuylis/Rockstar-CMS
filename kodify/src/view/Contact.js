@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
+import FormContact from '../components/FormContact';
 
 const Contact = () => {
     return (
@@ -7,6 +7,7 @@ const Contact = () => {
           <Helmet>
             <title>Konsultbolag i Malmö- Vi är Sveriges bästa Konsultbolag kodify.se</title>
           </Helmet>
+          <FormContact />
         </div>
     )
 }
