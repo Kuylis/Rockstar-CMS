@@ -1,5 +1,5 @@
 import './App.scss';
-import Header from './components/common/Header/Header'
+import Navbar from './components/common/Navbar/Navbar';
 import { Switch, Route } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async';
 import Home from "./view/Home";
@@ -11,8 +11,7 @@ import About from "./view/About";
 
 function App() {
   return (
-    <div>
-      <Header />
+    <div><Navbar />
       <HelmetProvider>
         <Switch>
           <Route path="/" component={Home} exact />

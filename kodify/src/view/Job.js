@@ -12,4 +12,4 @@ const Job = () => {
     )
 }
 
-export default Job
+export default Job;
