@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 
 
-const NewsBlog = () => {
+const NewsAndBlog = () => {
     return (
         <div>
           <Helmet>
@@ -11,4 +11,4 @@ const NewsBlog = () => {
     )
 }
 
-export default NewsBlog
+export default NewsAndBlog;

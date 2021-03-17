@@ -1,0 +1,12 @@
+$color-purple-dark: #3600CC;
+$color-pink: #FF4F94;
+$color-turquoise: #0CCCCC;
+$color-grey: #5C5C5C;
+$color-yellow: #F7DF04;
+
+$mobile: 800px;
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
