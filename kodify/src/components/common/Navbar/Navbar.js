@@ -27,8 +27,6 @@ const Navbar = () => {
     window.addEventListener('resize', showButton);
 
     const changeBackground = () => {
-        console.log(window.scrollY)
-        console.log(navbar)
         if(window.scrollY >= 80) {
             setNavbar(true);
         } else {
