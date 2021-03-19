@@ -52,7 +52,7 @@ const Navbar = () => {
                         <Link to='/' className='nav__links'>Hem</Link>
                     </li>
                     <li className='nav__item'>
-                        <Link to='/jobba-pa-kodify/' className='nav__links' onClick={closeMobileMenu}>Jobba på Kodify</Link>
+                        <Link to='/jobba-pa-kodify/' className='nav__links' onClick={closeMobileMenu}>Karriär</Link>
                     </li>
                     <li className='nav__item'>
                         <Link to='/konsultbolag-malmo/' className='nav__links' onClick={closeMobileMenu}>Om oss</Link>
@@ -61,7 +61,7 @@ const Navbar = () => {
                         <Link to='/kontakt/' className='nav__links' onClick={closeMobileMenu}>Kontakt</Link>
                     </li>
                     <li className='nav__item'>
-                        <Link to='/nyheter' className='nav__links' onClick={closeMobileMenu}>Blogg och nyheter</Link>
+                        <Link to='/nyheter' className='nav__links' onClick={closeMobileMenu}>Blogg</Link>
                     </li>
                     <li>
                         <Link to='/' className='nav__links__mobile' onClick={closeMobileMenu}>SIGN IN</Link>

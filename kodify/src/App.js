@@ -9,7 +9,6 @@ import NewsAndBlog from "./view/NewsAndBlog";
 import About from "./view/About";
 
 
-
 function App() {
   return (
     <div>
