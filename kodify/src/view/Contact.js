@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import Map from '../components/component/Map';
 
 
 const Contact = () => {
@@ -7,6 +8,7 @@ const Contact = () => {
           <Helmet>
             <title>Konsultbolag i Malmö- Vi är Sveriges bästa Konsultbolag kodify.se</title>
           </Helmet>
+          <Map />
         </div>
     )
 }

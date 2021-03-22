@@ -1,4 +1,4 @@
-import '../../../scss/Main.scss';
+import '../../../scss/main.scss';
 
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -27,8 +27,6 @@ const Navbar = () => {
     window.addEventListener('resize', showButton);
 
     const changeBackground = () => {
-        console.log(window.scrollY)
-        console.log(navbar)
         if(window.scrollY >= 80) {
             setNavbar(true);
         } else {
@@ -54,7 +52,7 @@ const Navbar = () => {
                         <Link to='/' className='nav__links'>Hem</Link>
                     </li>
                     <li className='nav__item'>
-                        <Link to='/jobba-pa-kodify/' className='nav__links' onClick={closeMobileMenu}>Jobba på Kodify</Link>
+                        <Link to='/jobba-pa-kodify/' className='nav__links' onClick={closeMobileMenu}>Karriär</Link>
                     </li>
                     <li className='nav__item'>
                         <Link to='/konsultbolag-malmo/' className='nav__links' onClick={closeMobileMenu}>Om oss</Link>
@@ -63,7 +61,7 @@ const Navbar = () => {
                         <Link to='/kontakt/' className='nav__links' onClick={closeMobileMenu}>Kontakt</Link>
                     </li>
                     <li className='nav__item'>
-                        <Link to='/nyheter' className='nav__links' onClick={closeMobileMenu}>Blogg och nyheter</Link>
+                        <Link to='/nyheter' className='nav__links' onClick={closeMobileMenu}>Blogg</Link>
                     </li>
                     <li>
                         <Link to='/' className='nav__links__mobile' onClick={closeMobileMenu}>SIGN IN</Link>
