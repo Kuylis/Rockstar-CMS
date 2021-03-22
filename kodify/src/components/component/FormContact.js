@@ -33,6 +33,7 @@ const FormContact = () => {
         <TextField
           id="firstName"
           name="firstName"
+          className='formContact__item'
           label="Förnamn"
           value={formik.values.firstName}
           onChange={formik.handleChange}
@@ -43,6 +44,7 @@ const FormContact = () => {
         <TextField
           id="lastName"
           name="lastName"
+          className='formContact__item'
           label="Efternamn"
           value={formik.values.lastName}
           onChange={formik.handleChange}
@@ -53,6 +55,7 @@ const FormContact = () => {
         <TextField
           id="subject"
           name="subject"
+          className='formContact__item'
           label="Ämne"
           value={formik.values.subject}
           onChange={formik.handleChange}
@@ -63,6 +66,7 @@ const FormContact = () => {
         <TextField
           id="email"
           name="email"
+          className='formContact__item'
           label="Email"
           value={formik.values.email}
           onChange={formik.handleChange}
@@ -73,6 +77,7 @@ const FormContact = () => {
         <TextField
           id="message"
           name="message"
+          className='formContact__item'
           label="Meddelande"
           value={formik.values.message}
           onChange={formik.handleChange}
@@ -80,7 +85,7 @@ const FormContact = () => {
           helperText={formik.touched.message && formik.errors.message}
           onBlur={formik.handleBlur}
         />
-        <Button type="submit">Skicka</Button>
+        <Button type="submit" className='formContact__item'>Skicka</Button>
       </form>
     )
 }

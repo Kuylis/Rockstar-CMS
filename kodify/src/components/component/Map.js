@@ -6,7 +6,7 @@ import {useState} from 'react';
 const MapContainer = () => {
     const [selected, setSelected] = useState({});
     const mapStyles = {        
-        height: "50vh",
+        height: "100%",
         width: "100%",
         fontSize: '2rem',
 
@@ -28,7 +28,7 @@ const MapContainer = () => {
                 googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>
                 <GoogleMap
                     mapContainerStyle={mapStyles}
-                    zoom={14}
+                    zoom={16}
                     center={defaultCenter.location}
                 >
                     <Marker 
@@ -43,8 +43,6 @@ const MapContainer = () => {
                             onCloseClick={() => setSelected({})}
                         ><>
                         <p>{selected.name}</p>
-                       
-                        
                         </></InfoWindow>
                         }
                 </GoogleMap>
