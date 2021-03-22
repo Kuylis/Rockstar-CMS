@@ -2,6 +2,7 @@ import {useFormik} from 'formik';
 import * as yup from 'yup';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import '../../scss/main.scss';
 
 const validationSchema = yup.object({
   firstName: yup.string().required("Glöm inte att fylla i ditt namn"),
@@ -22,13 +23,13 @@ const FormContact = () => {
       message: "",
     },
     onSubmit:(values) => {
-      console.log(values)
+      console.log(values);
     },
     validationSchema: validationSchema
   })
 
     return (
-      <form onSubmit={formik.handleSubmit}>
+      <form onSubmit={formik.handleSubmit} className='formContact__form'>
         <TextField
           id="firstName"
           name="firstName"
