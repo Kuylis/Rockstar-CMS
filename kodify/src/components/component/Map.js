@@ -1,5 +1,5 @@
 import { GoogleMap, LoadScript, Marker, InfoWindow } from '@react-google-maps/api';
-import '../../scss/Main.scss';
+import '../../scss/main.scss';
 import {useState} from 'react';
 
 
