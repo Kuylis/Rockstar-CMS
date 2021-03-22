@@ -20,7 +20,7 @@ const MapContainer = () => {
 
     const onSelect = defaultCenter => {
         setSelected(defaultCenter);
-    }git 
+    }
   
     return (
         <>
