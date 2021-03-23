@@ -2,7 +2,7 @@
     background: #fff;
     height: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
@@ -23,11 +23,16 @@
 }
 
 .nav {
+    &__menu__container {
+        width: 35vw;
+        display: flex;
+
+    }
     &__menu {
         display:flex;
         list-style: none;
         text-align: center;
-        width: 60vw;
+        width: 30vw;
         justify-content:flex-end;
 
     }
@@ -39,7 +44,7 @@
         text-decoration: none;
         padding: 0.5rem 1rem;
         height: 100%;
-
+        width: 6.25rem;
         &:hover {
             border-bottom: 4px solid #000;
             transition: all 0.2s ease-out;
@@ -61,6 +66,40 @@
     display: none;
 }
 
+.nav__sign-in-button {
+    display: inline-flex;
+    margin-left: 0px;
+    height: 2rem;
+    min-width: 5rem;
+    padding-right: 3rem;
+    display: flex;
+    
+}
+
+.MuiButton-label {
+    height: 2rem;
+    min-width: 5rem;
+}
+
+.navbar__social-media {
+    height:2rem;
+    width: 7rem;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fab {
+    color: black;
+    font-size: 1.5rem;
+}
+
+// .fa-facebook-f {
+//     font-size: 1rem;
+//     margin-top: -10px;
+//     padding-top: -5px;
+// }
+
 @media screen and (max-width: 1075px) {
   .Navbar {
       position: relative;
@@ -69,7 +108,7 @@
     .nav__menu {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-between;
         width: 100%;
         height: 80vh;
         position: absolute;
@@ -149,3 +188,4 @@
         border: 1px solid #fff;
     }
 }
+
