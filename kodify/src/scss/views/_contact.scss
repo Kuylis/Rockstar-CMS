@@ -1,5 +1,5 @@
 .contact__outerContainer {
-    height: 87vh;
+    height: 85vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -17,6 +17,7 @@
 .contact__map {
     height: 30rem;
     width: 30rem;
+    transition: transform .7s ease-in-out;
 }
 
 @media screen and (min-width: 500px) and (max-width: 1150px) {
@@ -29,8 +30,6 @@
         display: flex;
         align-items: flex-start;
     }
-
-
 }
 
 @media screen and (max-width: 500px) {
@@ -40,16 +39,18 @@
         height: fit-content;
         align-items: center;
     }
+
     .contact__map {
         transform: scale(0.67, 0.67);
         margin-top: -100px;
+        transition: transform .7s ease-in-out;
     }
+
     .contact__outerContainer {
         display: flex;
         align-items: flex-start;
         margin-bottom: 0px;
         height: fit-content;
         box-sizing: border-box;
-      
     }
 }
