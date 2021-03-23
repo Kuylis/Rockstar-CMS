@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .contact__innerContainer {
@@ -12,6 +13,7 @@
     width: 70rem;
     justify-content: space-between;
     align-items: center;
+    transition: all .7s ease-in-out;
 }
 
 .contact__map {
@@ -20,7 +22,7 @@
     transition: transform .7s ease-in-out;
 }
 
-@media screen and (min-width: 500px) and (max-width: 1150px) {
+@media screen and (min-width: 600px) and (max-width: 1050px) {
     .contact__innerContainer {
         display: flex;
         flex-direction: column;
@@ -29,15 +31,17 @@
     .contact__outerContainer {
         display: flex;
         align-items: flex-start;
+        
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .contact__innerContainer {
         display: flex;
         flex-direction: column;
         height: fit-content;
         align-items: center;
+        
     }
 
     .contact__map {
