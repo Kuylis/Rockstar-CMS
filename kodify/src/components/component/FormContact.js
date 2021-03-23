@@ -3,6 +3,7 @@ import * as yup from 'yup';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import '../../scss/main.scss';
+import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 
 const validationSchema = yup.object({
   firstName: yup.string().required("Glöm inte att fylla i ditt namn"),
@@ -74,10 +75,14 @@ const FormContact = () => {
           helperText={formik.touched.email && formik.errors.email}
           onBlur={formik.handleBlur}
         />
+       
         <TextField
           id="message"
           name="message"
           className='formContact__item'
+          multiline
+          rowsMax={4}
+          rowsMin={4}
           label="Meddelande"
           value={formik.values.message}
           onChange={formik.handleChange}

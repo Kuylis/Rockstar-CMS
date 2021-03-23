@@ -10,11 +10,24 @@
 .formContact__item {
     box-sizing: border-box;
     height: 30rem;
+    color: rgba(0, 0, 0, 0.54);
+    font-family: $work-sans;
+}
+
+.formContact__textarea {
+    box-sizing: border-box;
+    height: 30rem;
+    color: rgba(0, 0, 0, 0.54);
+    font-family: $work-sans;
+    &__label {
+        color: rgba(0, 0, 0, 0.54);
+        font-family: $work-sans;
+    }
 }
 
 @media screen and (max-width: 500px){
     .formContact__form {
-        transform: scale(0.67, 0.67);
+        transform: scale(0.63, 0.67);
         transition: transform .7s ease-in-out;
     }
 }
