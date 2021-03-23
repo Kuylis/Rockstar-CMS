@@ -55,20 +55,34 @@
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   background-color: $color-pink-light;
+
   > h2 {
   color: $color-white;
   font-size: 1.5rem;
   line-height: 1;
-  padding-top: 30px;
   }
+
   >p {
       color: $color-white;
       line-height: 1;
       width: 60%;
       padding-top: 20px;
       text-align: center;
+  }
+
+  .workplace__button {
+    padding-top: 20px;
+    button {
+      background-color: transparent;
+      color: #fff;
+      padding: 8px 70px;
+      border: 1px solid #fff;
+      border-radius: 2px;
+      cursor: pointer;
+    }
   }
 }
 

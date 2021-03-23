@@ -1,4 +1,5 @@
 import '../../scss/main.scss';
+import { Link } from 'react-router-dom';
 
 
 const HomeSection4 = () => {
@@ -9,6 +10,13 @@ const HomeSection4 = () => {
                 <p>Vi söker alltid efter nya härliga konsulter som vill bli en del av vår elitstyrka. Det vi söker hos vår nästa kollega är ett brinnande intresse för programmering och en vilja att lösa våra kunders problem på allra bästa sätt. Vi ser gärna att du har erfarenhet att jobba enligt DevOps,
                  eller ett brinnande intresse för att lära dig det. Sen vill vi också att du ska ha bra koll på någon av de större Cloud-plattformarna där ute.</p>
                  <p>En anledning kan ju vara att vi precis kom 2:a i tävlingen Great Place to Work. Det betyder att vi har väldigt nöjda medarbetare.</p>
+                 <div className="workplace__button">
+                   <Link to="/jobba-pa-kodify/">
+                     <button>
+                       Mer info
+                     </button>
+                   </Link>
+                 </div>
             </div>
             <div className="homeSection__image">
                 <img src="/assets/Ny_webb_1.jpeg.jpg" width="1920" height="1080" alt="workplace" />
