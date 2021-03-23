@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import FormContact from '../components/FormContact';
+import FormContact from '../components/component/FormContact';
 
 const Contact = () => {
     return (

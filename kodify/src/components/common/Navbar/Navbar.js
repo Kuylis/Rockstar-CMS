@@ -1,4 +1,4 @@
-import '../../../scss/Main.scss';
+import '../../../scss/main.scss';
 
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -27,8 +27,7 @@ const Navbar = () => {
     window.addEventListener('resize', showButton);
 
     const changeBackground = () => {
-        console.log(window.scrollY)
-        console.log(navbar)
+      
         if(window.scrollY >= 80) {
             setNavbar(true);
         } else {
