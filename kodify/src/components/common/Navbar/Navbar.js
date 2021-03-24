@@ -3,6 +3,7 @@ import '../../../scss/main.scss';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
+import Logo from '../../../icons/B3_Kodify_Positiv.png';
 
 
 const Navbar = () => {
@@ -40,14 +41,14 @@ const Navbar = () => {
     return (
         <>
             <nav className='navbar'  >
-                {/* <div className='navbar__social-media'>
-                    <Link to='https://www.linkedin.com/company/b3-kodify/'><i class="fab fa-linkedin-in"></i></Link>
-                    <Link to='https://www.facebook.com/B3consulting.est2003'><i class="fab fa-facebook-f"></i></Link>
-                    <Link to='https://www.instagram.com/b3_consulting/'><i class="fab fa-instagram"></i></Link>
-                </div> */}
+                <div className='navbar__social-media'>
+                    <Link to='https://www.linkedin.com/company/b3-kodify/'><i className="fab fa-linkedin-in"></i></Link>
+                    <Link to='https://www.facebook.com/B3consulting.est2003'><i className="fab fa-facebook-f"></i></Link>
+                    <Link to='https://www.instagram.com/b3_consulting/'><i className="fab fa-instagram"></i></Link>
+                </div>
                 <div className='navbar__container'>
                     <Link to='/'className='navbar__logo' onClick={closeMobileMenu}>
-                        <img src='https://kodify.se/_files/200000055-1136111363/200/B3%20Kodify_Positiv.png' alt='B3 kodify logo' />
+                        <img className='navbar__logo__icon' src={Logo} alt='B3 kodify logo' />
                     </Link>
                     <div className='navbar__menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>

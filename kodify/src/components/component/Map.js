@@ -21,7 +21,7 @@ const MapContainer = () => {
     const onSelect = defaultCenter => {
         setSelected(defaultCenter);
     }
-  
+
     return (
         <>
             <LoadScript
